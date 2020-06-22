@@ -8123,7 +8123,7 @@ navigator.mediaDevices.getUserMedia({video:true, audio:true})
         video.srcObject = stream
         video.play()
 
-        // used to initialize a peer
+        // used to initialize a peer application
         function  InitPeer(type) {
             let peer = new Peer({ initiator: (type == 'init') ? true : false, stream: stream, trickle: false })
             peer.on('stream', function(stream) {
