@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const http = require('http').Server(app)
 const io = require('socket.io')(http)
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
 
 app.use(express.static(__dirname + "/public"))
 let clients = 0
@@ -38,4 +38,4 @@ function SendAnswer(data) {
     this.broadcast.emit("BackAnswer", data)
 }
 
-http.listen(port, () => console.log('Example app listening at http://localhost: 3000 $(port)'))
+http.listen(PORT, () => console.log('Example app listening at http://localhost: 3000 $(PORT)'))
