@@ -7,7 +7,7 @@
     "start": "nodeman server.js",
     "watch": "npx watchify ./public/main.js -o ./public/bundle.js"
   },
-  "author": "Govardhan Palla",
+  "author": "Govardhan Palla latest",
   "dependencies": {
     "socket.io": "^2.3.0"
   },
