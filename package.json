@@ -4,17 +4,16 @@
   "description": "Simple one-to-one WebRTC video/voice and data channels",
   "main": "main.js",
   "scripts": {
-    "start": "node server.js",
-	"start:dev": "nodemon server.js",
+    "start": "nodeman server.js",
+    "start:dev": "nodemon server.js",
     "watch": "npx watchify ./public/main.js -o ./public/bundle.js"
   },
   "author": "Govardhan Palla",
-  "dependencies": {
-    "socket.io": "^2.3.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "express": "^4.17.1",
     "simple-peer": "^9.7.2",
+    "socket.io": "^2.3.0",
     "watchify": "^3.11.1"
   }
 }
