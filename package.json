@@ -13,7 +13,6 @@
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
-    "express": "^4.17.1",
     "simple-peer": "^9.7.2",
     "watchify": "^3.11.1"
   }
